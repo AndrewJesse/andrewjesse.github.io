@@ -68,7 +68,7 @@ body {
 #menu-background-image {
   background-image: url("images/background.webp");
   background-position: center 40%;
-  background-size: 110vmax;
+  background-size: 85vmax;
   height: 100%;
   left: 0px;
   opacity: 0.15;
@@ -116,7 +116,9 @@ body.menu-toggled > .meta-link > span {
 }
 
 #source-link {
-  bottom: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 #source-link > i {
