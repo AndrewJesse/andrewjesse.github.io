@@ -16,6 +16,18 @@ body {
   z-index: 2;
 }
 
+/* apply margin transition to all menu items except the one being hovered over */
+
+#menu-items > .menu-item:hover {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  transition: margin 0.1s ease-in-out;
+}
+#menu-items > .menu-item:not(:hover) {
+  font-size: 95px;
+  transition: font-size 0.1s ease-in-out;
+}
+
 #menu[data-active-index="0"] > #menu-background-pattern {
   background-position: 0% -25%;
 }
