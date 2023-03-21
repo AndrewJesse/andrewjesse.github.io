@@ -223,7 +223,7 @@ body.menu-toggled > .meta-link > span {
   .about-me-text {
     font-size: 14px;
   }
-  #menu-items {
+  .mobile-item {
     display: none;
   }
 }
