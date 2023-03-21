@@ -15,6 +15,12 @@ body {
   position: relative;
   z-index: 2;
 }
+#menu-items-about {
+  float: left;
+  margin-left: clamp(4rem, 20vw, 48rem);
+
+  z-index: 2;
+}
 
 /* apply margin transition to all menu items except the one being hovered over */
 
@@ -77,6 +83,8 @@ body {
 
 #menu-background-image {
   background-image: url("images/background.webp");
+  background-repeat: repeat;
+  background-attachment: fixed;
   background-position: center 40%;
   background-size: 85vmax;
   height: 100%;
@@ -167,4 +175,45 @@ body.menu-toggled > .meta-link > span {
 .meta-link > span {
   color: white;
   font-family: "Rubik", sans-serif;
+}
+
+/*Portrait Styles*/
+.portrait-container {
+  float: right;
+  width: 500px; /* adjust to the width of your image */
+  max-width: 1000px;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.portrait {
+  width: 100%; /* make the image fill the container */
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px; /* or adjust as needed */
+}
+
+.portrait-container {
+  pointer-events: none;
+  width: 500px;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  color: white;
+  float: right; /* Add this line to move the container to the right */
+}
+
+#menu-items-about {
+  margin-left: 20px; /* or adjust as needed */
+}
+.menu-item.hover:hover {
+  margin-left: 35px;
 }
