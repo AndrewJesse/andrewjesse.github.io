@@ -121,7 +121,7 @@ body {
   cursor: pointer;
   display: block;
   font-family: "Ibarra Real Nova", serif;
-  font-size: clamp(3rem, 8vw, 8rem);
+  font-size: clamp(3rem, 8vw, 7rem);
   text-decoration: none;
   transition: opacity 400ms ease;
 }
@@ -179,12 +179,14 @@ body.menu-toggled > .meta-link > span {
 
 /*Portrait Styles*/
 .portrait-container {
-  float: right;
-  width: 500px; /* adjust to the width of your image */
+  width: 550px;
   max-width: 1000px;
-  position: relative;
+  position: absolute;
   text-align: center;
   color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .portrait {
   width: 200px; /* make the image fill the container */
@@ -198,17 +200,6 @@ body.menu-toggled > .meta-link > span {
   justify-content: space-between;
   align-items: center;
   margin: 0 20px; /* or adjust as needed */
-}
-
-.portrait-container {
-  pointer-events: none;
-  width: 550px;
-  max-width: 1000px;
-  margin: 0 auto;
-  position: relative;
-  text-align: center;
-  color: white;
-  float: right; /* Add this line to move the container to the right */
 }
 
 #menu-items-about {
