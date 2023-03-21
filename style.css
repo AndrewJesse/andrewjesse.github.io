@@ -213,3 +213,17 @@ body.menu-toggled > .meta-link > span {
   line-height: 1.6; /* adjust the line height as needed */
   margin-top: 20px; /* add some margin to separate the text from the image */
 }
+/* Adjustments for screens with a max width of 768px */
+@media (max-width: 768px) {
+  .portrait-container {
+    margin: 0 auto;
+    max-width: 90%;
+  }
+
+  .about-me-text {
+    font-size: 14px;
+  }
+  #menu-items {
+    display: none;
+  }
+}
