@@ -187,7 +187,7 @@ body.menu-toggled > .meta-link > span {
   color: white;
 }
 .portrait {
-  width: 100%; /* make the image fill the container */
+  width: 200px; /* make the image fill the container */
   border-radius: 50%;
   overflow: hidden;
   z-index: 1;
@@ -202,7 +202,7 @@ body.menu-toggled > .meta-link > span {
 
 .portrait-container {
   pointer-events: none;
-  width: 500px;
+  width: 550px;
   max-width: 1000px;
   margin: 0 auto;
   position: relative;
@@ -216,4 +216,9 @@ body.menu-toggled > .meta-link > span {
 }
 .menu-item.hover:hover {
   margin-left: 35px;
+}
+.about-me-text {
+  font-size: 19px; /* adjust the font size as needed */
+  line-height: 1.6; /* adjust the line height as needed */
+  margin-top: 20px; /* add some margin to separate the text from the image */
 }
