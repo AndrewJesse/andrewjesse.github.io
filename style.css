@@ -121,7 +121,7 @@ body {
   cursor: pointer;
   display: block;
   font-family: "Ibarra Real Nova", serif;
-  font-size: clamp(3rem, 8vw, 7rem);
+  font-size: clamp(2rem, 7vw, 6rem);
   text-decoration: none;
   transition: opacity 400ms ease;
 }
@@ -209,10 +209,13 @@ body.menu-toggled > .meta-link > span {
   margin-left: 35px;
 }
 .about-me-text {
-  font-size: 19px; /* adjust the font size as needed */
-  line-height: 1.6; /* adjust the line height as needed */
-  margin-top: 20px; /* add some margin to separate the text from the image */
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: white;
+  margin-top: 20px;
 }
+
 /* Adjustments for screens with a max width of 768px */
 @media (max-width: 768px) {
   .portrait-container {
@@ -226,4 +229,14 @@ body.menu-toggled > .meta-link > span {
   .mobile-item {
     display: none;
   }
+}
+.greeting-container {
+  width: 550px;
+  max-width: 1000px;
+  position: absolute;
+  text-align: center;
+  color: white;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
